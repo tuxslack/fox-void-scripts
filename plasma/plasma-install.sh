@@ -96,7 +96,7 @@ sudo xbps-install kde5 kde5-baseapps -y
 
 # Install extra KDE applications
 
-sudo xbps-install spectacle -y
+sudo xbps-install spectacle oxygen-sounds -y
 
 # Enable KDE's Display Manager (SDDM)
 
