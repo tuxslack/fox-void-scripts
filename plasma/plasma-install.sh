@@ -23,7 +23,7 @@ sudo xbps-install dbus elogind NetworkManager -y
 
 # Install recommended packages
 
-sudo xbps-install curl wget git xz unzip zip nano vim gptfdisk xtools mtools mlocate ntfs-3g fuse-exfat bash-completion linux-headers gtksourceview4 ffmpeg mesa-vdpau mesa-vaapi htop fastfetch numlockx psmisc 7zip cpupower xmirror -y
+sudo xbps-install curl wget git xz unzip zip nano vim gptfdisk xtools mtools mlocate ntfs-3g fuse-exfat bash-completion linux-headers gtksourceview4 ffmpeg mesa-vdpau mesa-vaapi htop fastfetch numlockx psmisc 7zip cpupower xmirror mesa-demos noto-fonts-cjk noto-fonts-emoji -y
 
 # Install some development packages (optional but recommended)
 
@@ -115,6 +115,5 @@ sudo ln -s /etc/sv/dbus /var/service
 sudo ln -s /etc/sv/elogind/ /var/service
 sudo ln -s /etc/sv/NetworkManager /var/service
 
-# Inform finished installation
 
 echo "Installation complete. Please reboot your computer."
