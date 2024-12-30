@@ -1,3 +1,4 @@
+
 # This script was made by Secret Firefox.
 # It borrows information from Karen Sargsyan's post at dev.to.
 # This will install KDE Plasma on your Void Linux with some quality of life customization.
@@ -23,7 +24,7 @@ sudo xbps-install dbus elogind NetworkManager -y
 
 # Install recommended packages
 
-sudo xbps-install curl wget git xz unzip zip nano vim gptfdisk xtools mtools mlocate ntfs-3g fuse-exfat bash-completion linux-headers gtksourceview4 ffmpeg mesa-vdpau mesa-vaapi htop fastfetch numlockx psmisc 7zip cpupower xmirror mesa-demos noto-fonts-cjk noto-fonts-emoji -y
+sudo xbps-install curl wget git xz unzip zip nano vim gptfdisk xtools mtools mlocate ntfs-3g fuse-exfat bash-completion linux-headers gtksourceview4 ffmpeg mesa-vdpau mesa-vaapi htop fastfetch numlockx psmisc 7zip cpupower xmirror mesa-demos noto-fonts-cjk noto-fonts-emoji unrar -y
 
 # Install some development packages (optional but recommended)
 
@@ -96,7 +97,7 @@ sudo xbps-install kde5 kde5-baseapps -y
 
 # Install extra KDE applications
 
-sudo xbps-install spectacle dragon-player ark okular kcalc -y
+sudo xbps-install spectacle dragon-player ark okular kcalc gwenview -y
 
 # Enable KDE's Display Manager (SDDM)
 
