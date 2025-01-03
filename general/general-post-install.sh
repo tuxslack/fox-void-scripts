@@ -79,9 +79,10 @@ sudo touch /etc/sv/dhcpcd/down /etc/sv/wpa_supplicant/down
 sudo sv status dhcpcd
 sudo sv status wpa_supplicant
 
-# Enable dbus and NetworkManager
+# Enable dbus, elogind and NetworkManager
 
 sudo ln -s /etc/sv/dbus /var/service
+sudo ln -s /etc/sv/elogind /var/service
 sudo ln -s /etc/sv/NetworkManager /var/service
 
 # Inform finished installation
