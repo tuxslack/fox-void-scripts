@@ -23,7 +23,7 @@ sudo xbps-install dbus elogind NetworkManager -y
 
 # Install recommended packages
 
-sudo xbps-install curl wget git xz unzip zip nano vim gptfdisk xtools mtools mlocate ntfs-3g fuse-exfat bash-completion linux-headers gtksourceview4 ffmpeg mesa-vdpau mesa-vaapi htop fastfetch numlockx psmisc 7zip cpupower xmirror mesa-demos noto-fonts-cjk noto-fonts-emoji unrar xdg-user-dirs xdg-user-dirs-gtk -y
+sudo xbps-install curl wget git xz unzip zip nano vim gptfdisk xtools mtools mlocate ntfs-3g fuse-exfat bash-completion linux-headers gtksourceview4 ffmpeg mesa-vdpau mesa-vaapi htop fastfetch numlockx psmisc 7zip cpupower xmirror mesa-demos noto-fonts-cjk noto-fonts-emoji xdg-user-dirs xdg-user-dirs-gtk -y
 
 # Install some development packages (optional but recommended)
 
