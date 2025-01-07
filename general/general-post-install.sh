@@ -61,12 +61,6 @@ sudo chmod +x /etc/sv/psd/*
 cd ..
 sudo rm -rf runit-services
 
-# Install Firefox and make its fonts look better (with antialiasing)
-
-sudo xbps-install firefox firefox-i18n-en-US -y
-sudo ln -s /usr/share/fontconfig/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
-sudo xbps-reconfigure -f fontconfig
-
 # Run some xdg-utilities to make GTK apps appear more ready
 
 xdg-user-dirs-update
