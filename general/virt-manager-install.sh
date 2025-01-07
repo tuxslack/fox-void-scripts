@@ -4,7 +4,7 @@
 
 # Install libvirt and QEMU
 
-sudo xbps-install libvirt qemu -y
+sudo xbps-install virt-manager libvirt qemu -y
 
 # Enable services
 
