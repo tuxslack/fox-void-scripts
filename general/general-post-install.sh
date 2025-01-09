@@ -21,7 +21,7 @@ sudo xbps-install dbus elogind NetworkManager -y
 
 # Install recommended packages
 
-sudo xbps-install curl wget git xz unzip zip nano vim gptfdisk xtools mtools mlocate ntfs-3g fuse-exfat bash-completion linux-headers gtksourceview4 ffmpeg mesa-vdpau mesa-vaapi htop fastfetch numlockx psmisc 7zip cpupower xmirror mesa-demos noto-fonts-cjk noto-fonts-emoji xdg-user-dirs xdg-user-dirs-gtk -y
+sudo xbps-install curl wget git xz unzip zip nano vim gptfdisk xtools mtools mlocate ntfs-3g fuse-exfat bash-completion linux-headers ffmpeg mesa-vdpau mesa-vaapi htop fastfetch psmisc 7zip cpupower xmirror mesa-demos noto-fonts-cjk noto-fonts-emoji xdg-user-dirs xdg-user-dirs-gtk -y
 
 # Install development packages
 
@@ -61,6 +61,12 @@ sudo chmod +x /etc/sv/psd/*
 cd ..
 sudo rm -rf runit-services
 
+# Install Firefox and set a better font for it
+
+sudo xbps-install firefox firefox-i18n-en-US -y
+sudo ln -s /usr/share/fontconfig/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
+sudo xbps-reconfigure -f fontconfig
+
 # Run some xdg-utilities to make GTK apps appear more ready
 
 xdg-user-dirs-update
@@ -68,16 +74,16 @@ xdg-user-dirs-gtk-update
 
 # Switch off dhcpcd and wpa_supplicant in favor of Network Manager 
 
-sudo sv down dhcpcd wpa_supplicant
-sudo touch /etc/sv/dhcpcd/down /etc/sv/wpa_supplicant/down
-sudo sv status dhcpcd
-sudo sv status wpa_supplicant
+#sudo sv down dhcpcd wpa_supplicant
+#sudo touch /etc/sv/dhcpcd/down /etc/sv/wpa_supplicant/down
+#sudo sv status dhcpcd
+#sudo sv status wpa_supplicant
 
 # Enable dbus, elogind and NetworkManager
 
-sudo ln -s /etc/sv/dbus /var/service
-sudo ln -s /etc/sv/elogind /var/service
-sudo ln -s /etc/sv/NetworkManager /var/service
+#sudo ln -s /etc/sv/dbus /var/service
+#sudo ln -s /etc/sv/elogind /var/service
+#sudo ln -s /etc/sv/NetworkManager /var/service
 
 # Inform finished installation
 
